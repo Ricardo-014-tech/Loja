@@ -1,68 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Loja Virtual</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        .produtos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            padding: 1rem;
-        }
-        .produto {
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        }
-        .produto img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        .produto a {
-            display: block;
-            margin-top: 0.5rem;
-            text-decoration: none;
-            color: white;
-            background: #007bff;
-            padding: 0.5rem;
-            border-radius: 4px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ricardo Consórcios e Vendas</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header { background: #333; color: #fff; padding: 1rem; text-align: center; }
+    nav { text-align: center; padding: 0.5rem; background: #444; }
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+    section { padding: 2rem; }
+    footer { background: #333; color: #fff; text-align: center; padding: 1rem; }
+    .contact-form { max-width: 500px; margin: 0 auto; }
+    .contact-form input, .contact-form textarea { width: 100%; margin-bottom: 1rem; padding: 0.5rem; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Minha Loja Virtual</h1>
-        <p>Promoções incríveis para você!</p>
-    </header>
-    <section class="produtos">
-        <div class="produto">
-            <img src="https://via.placeholder.com/200" alt="Produto 1">
-            <h2>Produto 1</h2>
-            <p>R$ 99,90</p>
-            <a href="#">Comprar agora</a>
-        </div>
-        <div class="produto">
-            <img src="https://via.placeholder.com/200" alt="Produto 2">
-            <h2>Produto 2</h2>
-            <p>R$ 149,90</p>
-            <a href="#">Comprar agora</a>
-        </div>
-    </section>
+  <header>
+    <h1>Ricardo Consórcios e Vendas</h1>
+    <p>Consórcios, veículos e imóveis para você!</p>
+  </header>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#anuncios">Anúncios</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <section id="sobre">
+    <h2>Sobre</h2>
+    <p>Trabalho com a venda de consórcios de carros, motos, imóveis e muito mais. Ofereço as melhores opções para facilitar o seu sonho.</p>
+  </section>
+  <section id="anuncios">
+    <h2>Anúncios</h2>
+    <ul>
+      <li>Consórcios de imóveis a partir de R$ 500/mês.</li>
+      <li>Consórcios de carros novos e seminovos.</li>
+      <li>Venda direta de veículos e imóveis.</li>
+    </ul>
+  </section>
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato para mais informações:</p>
+    <form class="contact-form" action="https://formspree.io/f/mnnqkwvp" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" rows="5" placeholder="Sua mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <footer>
+    <p>© 2025 Ricardo Consórcios e Vendas. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
